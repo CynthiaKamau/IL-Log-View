@@ -1,0 +1,35 @@
+extends layout
+
+block content
+    #heading
+      h1 IL Clients
+      label !{results} // working - printing whole json string
+    #content
+      //- Do it like this...You're already in JavaScript land after the -
+      - var items = results
+      div 
+        table.table.table-hover 
+          thead 
+            tr: th Clients
+                th Gender 
+                th Marital Status
+                th Phone Number 
+                th Group 
+                th Source 
+                th Enrollment Date 
+                th Processed 
+                th Date Processed 
+                th Medical Record Number 
+          tbody 
+            each item in items
+              tr 
+                td=item.clinic_number
+                td=item.gender
+                td=item.marital
+                td=item.phone_no
+                td=item.group_id
+                td=item.SENDING_APPLICATION
+                td=item.enrollment_date
+                td=item.processed
+                td=item.date_processed
+                td=item.file_no

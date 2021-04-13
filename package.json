@@ -1,0 +1,25 @@
+{
+  "name": "ushauri-il",
+  "version": "1.0.0",
+  "description": "ushauri il data manager",
+  "main": "login.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepeshrohilla/login-nodejs-mysql.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deepeshrohilla/login-nodejs-mysql/issues"
+  },
+  "homepage": "https://github.com/deepeshrohilla/login-nodejs-mysql#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jade": "^1.11.0",
+    "mysql": "^2.18.1"
+  }
+}
